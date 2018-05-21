@@ -46,3 +46,5 @@ vue下拉list支持全选功能
                 
  贴段watch代码
  ![basic](https://github.com/bill-mark/Vue-list-allchecked_suppurt/blob/master/static/5.png)
+ 
+ 如果对你有帮助 右上角求个星星
