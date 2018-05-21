@@ -3,9 +3,11 @@ vue下拉list支持全选功能
 
 导语:Vue中单选下拉框开发起来非常简单,直接select包裹一个带v-for的option即可
 
+![basic](https://github.com/bill-mark/Vue-list-allchecked_suppurt/blob/master/static/1.png)
+
 
        但是当我们想做个带多选的下拉框该怎么办呢?最简方法是什么?比如下面这个图:
-
+![basic](https://github.com/bill-mark/Vue-list-allchecked_suppurt/blob/master/static/2.png)
 
 如果网上搜的话,搜的是一堆带children的 ,那种是遍历tree的思想,和多选下拉框不是一回事,而且写起了复杂
 
@@ -15,11 +17,11 @@ vue下拉list支持全选功能
 
 分析:前端先声明一个空数组,拿到后端返回的数组对象后,新增一个name为全部的对象,下面是源码例子
 
-
+![basic](https://github.com/bill-mark/Vue-list-allchecked_suppurt/blob/master/static/3.png)
 
 
 接下来写HTML:
-
+![basic](https://github.com/bill-mark/Vue-list-allchecked_suppurt/blob/master/static/4.png)
 
 下面就是JS了:
 
@@ -41,3 +43,6 @@ vue下拉list支持全选功能
                解决方案:在watch中声明空数组,然后把state为true的元素加入进来,剩下的就是比较判断了,
 
                 最后把watch声明的空数组的id取出来传给后端即可 
+                
+ 贴段watch代码
+ ![basic](https://github.com/bill-mark/Vue-list-allchecked_suppurt/blob/master/static/5.png)
